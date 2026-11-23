@@ -8,6 +8,11 @@
 	--main-link-color: color-mix(in srgb, var(--accent-color) 65%, var(--primary-color) 35%);
 }
 
+@font-face {
+	font-family: "Ink Free";
+	src: url("Inkfree.ttf") format("truetype");
+}
+
 /* reset */
 * {
 	margin: 0;
@@ -25,7 +30,10 @@ body {
 }
 header, section, aside, footer { padding: 1em; }
 h1, h2, h3, p, article, blockquote { padding-bottom: .5em; }
-h1 { font-size: 150%; }
+h1 {
+	font-size: 150%;
+	font-family: "Ink Free", cursive;
+}
 h2 { font-size: 120%; }
 h3 { font-size: 110%; }
 a:focus, a:hover { font-style: italic; }
