@@ -5,6 +5,7 @@
 	--light-accent: #fffded;
 	--light: white;
 	--dark: black;
+	--main-link-color: color-mix(in srgb, var(--accent-color) 65%, var(--primary-color) 35%);
 }
 
 /* reset */
@@ -61,6 +62,9 @@ main {
 	clear: left;
 	display: flex;
 }
+main a {
+	color: var(--main-link-color);
+}
 
 /* the styles for the section */
 section {
@@ -87,11 +91,20 @@ article {
 	border-top: 3px solid var(--primary-color);
 	padding-top: .5em;
 	margin-bottom: .5em;
-	& img {
+	& figure {
 		float: left;
 		margin: .25em 1em 1em 0;
-		border: 1px solid var(--dark);
 		width: min(100%, 225px);
+	}
+	& figcaption {
+		font-size: 90%;
+		font-style: italic;
+		padding-bottom: .25em;
+	}
+	& img {
+		display: block;
+		width: 100%;
+		border: 1px solid var(--dark);
 	}
 }
 
